@@ -9,6 +9,18 @@ class starter {
 	public static void main(String args[]) {
 		// the string "I love to learn coding remotely." will appear in
 		// the command window when you compile and run this program.
-		System.out.print("I love to learn coding remotely."); 
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Please input your first number: "); 
+		int num1 = sc.nextInt();
+		System.out.print("Please input your second number: ");
+		int num2 = sc.nextInt();
+		boolean same = num1==num2;
+		boolean diff = num1!=num2;
+		if(same){
+		System.out.println("Your numbers are the same!");
+		}
+		if(diff){
+		System.out.println("Your numbers are different!");
+		}
 	}
 }
